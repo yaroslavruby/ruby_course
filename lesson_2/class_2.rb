@@ -10,7 +10,7 @@ class Dog
     @name = value
     end
   end
-
+  
   def age=(value)
     if value < 0
       "An age of #{value} isn't valid!"
@@ -18,10 +18,7 @@ class Dog
       @age = value
     end
   end
-
-  def hello
-  end
-
+      
   def report_age
     "#{@name} is #{@age} years old."
   end

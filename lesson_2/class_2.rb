@@ -20,6 +20,7 @@ class Dog
   end
 
   def hello
+    puts 'hello'
   end
 
   def report_age

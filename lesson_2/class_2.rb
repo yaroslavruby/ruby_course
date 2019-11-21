@@ -5,35 +5,34 @@ class Dog
 
   def name=(value)
     if value == ""
-    "Name can't be blank!"
-    else
-    @name = value
+     raise "Name can't be blank!"
     end
+     @name = value
   end
-  
+
   def age=(value)
     if value < 0
-      "An age of #{value} isn't valid!"
-    else
-      @age = value
+     raise "An age of #{value} isn't valid!"
     end
+     @age = value
   end
-      
-  def report_age
-    "#{@name} is #{@age} years old."
+
+  def move(destination)
+    "#{@name} runs to the #{destination}."
   end
+
   def talk
     "#{@name} says Bark!"
   end
 
-  def move(destination)
-    "#{@name} running to the #{destination}."
+  def report_age
+    "#{@name} is #{@age} years old."
   end
 end
 
-
-fido = Dog.new
-fido.name = ""
-fido.move("yard")
-fido.age = -1
-fido.report_age
+dog = Dog.new
+dog.name = "Jack"
+dog.age = 5
+dog.report_age
+dog.talk
+dog.move("bed")

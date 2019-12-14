@@ -5,7 +5,7 @@ class Dog
 
   def name=(value)
     if value == ""
-     raise "Name can't be blank!"
+      raise "Name can't be blank!"
     end
      @name = value
   end
@@ -36,3 +36,4 @@ dog.age = 5
 dog.report_age
 dog.talk
 dog.move("bed")
+ 

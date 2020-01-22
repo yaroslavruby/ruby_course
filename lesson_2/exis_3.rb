@@ -18,6 +18,3 @@ end
 
 labrador = Labrador.new('Archi')
 puts labrador.bark
-labrador.name = 'Richard'
-puts labrador.bark
-

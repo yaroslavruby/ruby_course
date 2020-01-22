@@ -7,9 +7,10 @@ class Worker
   end
 
   def worker_info
-    puts "Worker #{name} and his #{age} years old."
+    "Worker #{name} and his #{age} years old."
   end
 end
 
-Worker.new('John', 28).worker_info
-Worker.new('Joanna', 25).worker_info
+worker = Worker.new('John', 28)
+puts worker.worker_info
+# Worker.new('Joanna', 25).worker_info

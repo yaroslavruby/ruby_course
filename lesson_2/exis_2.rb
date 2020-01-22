@@ -4,6 +4,5 @@ class TwoFer
   end
 end
 
-# puts TwoFer.two_fer
-# puts TwoFer.two_fer('Yaroslav')
-
+puts TwoFer.two_fer
+puts TwoFer.two_fer('Yaroslav')

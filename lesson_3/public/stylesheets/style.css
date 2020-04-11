@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: regular;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.active, a:hover {
+  cursor: pointer;
+  color: #cfac0d;
+}
+
+/* Navbar */
+
+.main-head {
+  background: #131c27;
+  color: white;
+}
+
+nav {
+  padding: 2rem;
+  display: flex;
+  width: 90%;
+  min-height: 10vh;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 20rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#logo {
+  display: flex;
+  flex: 2 1 40rem;
+}

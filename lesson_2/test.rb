@@ -1,15 +1,25 @@
-class Person
-  
-  def greet_by_name(name)
-    "Hello, #{name}!"
+class Car
+
+  def initialize(engine)
+    @engine = engine
   end
-end
-   
-class Friend < Person
-  def greet_by_name(name)
-    basic_greeting = super(name)
-    "#{basic_greeting} Glad to see you!"
+
+  def rev_engine
+    @engine.make_sound
   end
 end
 
-puts Friend.new.greet_by_name("Meghan")
+class Engine
+  
+  def initialize(sound = "Vroom!!")
+    @sound = sound
+  end
+
+  def make_sound
+    puts @sound
+  end
+end
+
+engine = Engine.new
+car = Car.new(engine)
+car.rev_engine
